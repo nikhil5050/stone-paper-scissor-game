@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Stone Paper Scissor Game</h1>
+    
+
+    <img src="Stone.png" alt="" id="img" onclick="
+    const msg = document.querySelector('#msg');
+    let randomNumber= Math.random()*3;
+    let computerChoice;
+    if(randomNumber > 0 && randomNumber<=1){
+     computerChoice ='Stone';
+        // console.log('computerChoice is Stone');
+    }else if(randomNumber >1 && randomNumber<=2)
+    {
+        computerChoice = 'paper';
+        //  console.log('computerChoice is paper');
+    }else{
+        computerChoice= 'scissor'
+        //  console.log('computerChoice is scissor');
+    }
+
+
+    let resultMsg;
+if(computerChoice === 'paper')
+{
+    resultMsg = ('computer win.')
+    msg.innerText = 'You Lose ';
+    msg.style.backgroundColor = 'red';
+
+}else if(computerChoice === 'Stone')
+{
+    resultMsg = (`it's  a tie`);
+    msg.innerText = `it's  a tie Play Again`;
+    msg.style.backgroundColor = 'black';
+
+}else if (computerChoice === 'scissor')
+{
+    resultMsg = ('User Win.');
+    msg.innerText = 'You Win !';
+    msg.style.backgroundColor = 'green';
+}
+// alert(`you have chosen Stone. computer choice is ${computerChoice} and ${resultMsg}`); ">
+
+    <img src="paper1.png" alt="" id="img" onclick="
+    const msg = document.querySelector('#msg');
+     let randomNumber = Math.random()*3;
+    let  computerChoice;
+    if(randomNumber > 0 && randomNumber<=1){
+     computerChoice ='Stone';
+        // console.log('computerChoice is Stone');
+    }else if(randomNumber >1 && randomNumber<=2)
+    {
+        computerChoice = 'paper';
+        //  console.log('computerChoice is paper');
+    }else{
+        computerChoice= 'scissor'
+        //  console.log('computerChoice is scissor');
+    }
+
+
+    let resultMsg;
+if(computerChoice === 'paper')
+{
+    resultMsg = `it's  a tie`;
+    msg.innerText = `it's  a tie Play Again`;
+    msg.style.backgroundColor = 'black';
+}else if(computerChoice === 'Stone')
+{
+    resultMsg = 'User Won';
+    msg.innerText = 'You Win !';
+    msg.style.backgroundColor = 'green';
+    
+}else if (computerChoice === 'scissor')
+{
+    resultMsg = 'Computer has won.';
+    msg.innerText = 'You Lose !';
+    msg.style.backgroundColor = 'red';
+}
+// alert(`you have chosen paper. computer choice is ${computerChoice} and ${resultMsg}`);
+
+    ">
+    <img src="scissor.png" alt="" id="img" onclick="
+    const msg = document.querySelector('#msg');
+    let randomNumber= Math.random()*3;
+    let computerChoice;
+    if(randomNumber > 0 && randomNumber<=1){
+     computerChoice ='Stone';
+        // console.log('computerChoice is Stone');
+    }else if(randomNumber >1 && randomNumber<=2)
+    {
+        computerChoice = 'paper';
+        //  console.log('computerChoice is paper');
+    }else{
+        computerChoice= 'scissor'
+        //  console.log('computerChoice is scissor');
+    }
+
+
+    let resultMsg;
+if(computerChoice === 'paper')
+{
+    resultMsg = ('User Win.')
+    msg.innerText = 'You Win !';
+    msg.style.backgroundColor = 'green';
+    
+}else if(computerChoice === 'Stone')
+{
+    resultMsg = (`Computer won`);
+    msg.innerText = 'You Lose ';
+    msg.style.backgroundColor = 'red';
+}else if (computerChoice === 'scissor')
+{
+    resultMsg = ('tie.');
+    msg.innerText = `it's  a tie Play Again`;
+    msg.style.backgroundColor = 'black';
+}
+// (`you have chosen scissor. computer choice is ${computerChoice} and ${resultMsg}`); ">
+
+<div class="msg-container">
+    <p id="msg">Play Your Move</p>
+</div>
+    <script></script>
+</body>
+
+</html>
